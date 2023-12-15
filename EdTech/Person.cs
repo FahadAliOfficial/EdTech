@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EdTech
+{
+    internal class Person
+    {
+        public string Name { get; set; } = "";
+        public string Gender { get; set; } = "";
+        public DateTime DOB { get; set; } = DateTime.MinValue;
+        public int Age { get; set; } = 0;
+        public string Disablity { get; set; } = "";
+        public Person(string name,string gender,DateTime dob, string disability,int age) { Name = name;Gender = gender; DOB = dob; Disablity = disability; Age = age; }
+        public void DisplayPersonInfo()
+        {
+            Console.WriteLine($"Name: {Name}, Gender: {Gender}, Date of Birth: {DOB}, Disablity: {Disablity}");
+        }
+    }
+}
