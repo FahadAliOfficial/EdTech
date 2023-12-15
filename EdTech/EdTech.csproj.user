@@ -4,7 +4,10 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="New_Student_Registration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Students.cs">

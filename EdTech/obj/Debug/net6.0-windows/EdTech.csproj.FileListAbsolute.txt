@@ -4,7 +4,6 @@ E:\EdTech\EdTech\EdTech\bin\Debug\net6.0-windows\EdTech.runtimeconfig.json
 E:\EdTech\EdTech\EdTech\bin\Debug\net6.0-windows\EdTech.dll
 E:\EdTech\EdTech\EdTech\bin\Debug\net6.0-windows\EdTech.pdb
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Dashboard.resources
-E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Form1.resources
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Students.resources
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.csproj.GenerateResource.cache
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.GeneratedMSBuildEditorConfig.editorconfig
@@ -16,3 +15,6 @@ E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\refint\EdTech.dll
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.pdb
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.genruntimeconfig.cache
 E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\ref\EdTech.dll
+E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.New_Student_Registration.resources
+E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Properties.Resources.resources
+E:\EdTech\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Login.resources

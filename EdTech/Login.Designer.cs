@@ -1,6 +1,6 @@
 ﻿namespace EdTech
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -40,6 +40,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
@@ -51,6 +52,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
@@ -62,6 +64,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
@@ -73,6 +76,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
@@ -84,6 +88,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             comboBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.Location = new Point(343, 272);
             comboBox1.Name = "comboBox1";
@@ -92,6 +97,7 @@
             // 
             // textBox1
             // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             textBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(343, 375);
             textBox1.Name = "textBox1";
@@ -100,17 +106,19 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(546, 434);
+            label5.Location = new Point(492, 435);
             label5.Name = "label5";
-            label5.Size = new Size(108, 23);
+            label5.Size = new Size(162, 23);
             label5.TabIndex = 7;
-            label5.Text = "Password:";
+            label5.Text = "Reset Password";
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top;
             button1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(343, 495);
             button1.Name = "button1";
@@ -118,6 +126,7 @@
             button1.TabIndex = 8;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -134,7 +143,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }

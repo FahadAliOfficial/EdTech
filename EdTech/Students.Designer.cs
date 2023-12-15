@@ -71,7 +71,7 @@
             // 
             panel3.BackColor = Color.SteelBlue;
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(1196, 0);
+            panel3.Location = new Point(1117, 0);
             panel3.Margin = new Padding(4, 3, 4, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(12, 717);
@@ -84,7 +84,7 @@
             panel4.Location = new Point(12, 708);
             panel4.Margin = new Padding(4, 3, 4, 3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1184, 9);
+            panel4.Size = new Size(1105, 9);
             panel4.TabIndex = 3;
             // 
             // panel5
@@ -96,7 +96,7 @@
             panel5.Location = new Point(12, 0);
             panel5.Margin = new Padding(4, 3, 4, 3);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1184, 72);
+            panel5.Size = new Size(1105, 72);
             panel5.TabIndex = 4;
             // 
             // button5
@@ -131,7 +131,7 @@
             panel1.Location = new Point(12, 193);
             panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1120, 20);
+            panel1.Size = new Size(1105, 20);
             panel1.TabIndex = 5;
             // 
             // button1
@@ -150,6 +150,7 @@
             button1.Text = "Add Student";
             button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -181,7 +182,7 @@
             button3.Name = "button3";
             button3.Size = new Size(256, 77);
             button3.TabIndex = 8;
-            button3.Text = "Update Student";
+            button3.Text = "Delete Student";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = false;
             // 
@@ -207,7 +208,7 @@
             panel6.Controls.Add(dataGridView1);
             panel6.Location = new Point(12, 215);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1184, 446);
+            panel6.Size = new Size(1105, 446);
             panel6.TabIndex = 10;
             // 
             // dataGridView1
@@ -219,7 +220,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(1184, 446);
+            dataGridView1.Size = new Size(1105, 446);
             dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -238,7 +239,7 @@
             // 
             // Column3
             // 
-            Column3.HeaderText = "First Name";
+            Column3.HeaderText = "Name";
             Column3.MinimumWidth = 8;
             Column3.Name = "Column3";
             Column3.Width = 150;
@@ -303,7 +304,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1208, 717);
+            ClientSize = new Size(1129, 717);
             Controls.Add(panel6);
             Controls.Add(button4);
             Controls.Add(button3);

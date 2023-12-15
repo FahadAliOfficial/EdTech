@@ -19,7 +19,10 @@ namespace EdTech
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            using(Students res = new EdTech.Students())
+            {
+                res.ShowDialog();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

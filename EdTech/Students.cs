@@ -21,5 +21,13 @@ namespace EdTech
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (New_Student_Registration res = new EdTech.New_Student_Registration())
+            {
+                res.ShowDialog();
+            }
+        }
     }
 }
