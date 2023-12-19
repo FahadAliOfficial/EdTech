@@ -243,6 +243,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column5, Column6, Column7, Column10, Column8, Column4, Column9, Column11 });
             dataGridView1.Dock = DockStyle.Fill;
@@ -258,77 +259,66 @@
             Column1.HeaderText = "Session";
             Column1.MinimumWidth = 8;
             Column1.Name = "Column1";
-            Column1.Width = 150;
             // 
             // Column2
             // 
             Column2.HeaderText = "Student ID";
             Column2.MinimumWidth = 8;
             Column2.Name = "Column2";
-            Column2.Width = 150;
             // 
             // Column3
             // 
             Column3.HeaderText = "Name";
             Column3.MinimumWidth = 8;
             Column3.Name = "Column3";
-            Column3.Width = 150;
             // 
             // Column5
             // 
             Column5.HeaderText = "Gender";
             Column5.MinimumWidth = 8;
             Column5.Name = "Column5";
-            Column5.Width = 150;
             // 
             // Column6
             // 
             Column6.HeaderText = "B.Form";
             Column6.MinimumWidth = 8;
             Column6.Name = "Column6";
-            Column6.Width = 150;
             // 
             // Column7
             // 
             Column7.HeaderText = "D.O.B";
             Column7.MinimumWidth = 8;
             Column7.Name = "Column7";
-            Column7.Width = 150;
             // 
             // Column10
             // 
             Column10.HeaderText = "Class";
             Column10.MinimumWidth = 8;
             Column10.Name = "Column10";
-            Column10.Width = 150;
             // 
             // Column8
             // 
             Column8.HeaderText = "Father Name";
             Column8.MinimumWidth = 8;
             Column8.Name = "Column8";
-            Column8.Width = 150;
             // 
             // Column4
             // 
             Column4.HeaderText = "P Number";
             Column4.MinimumWidth = 8;
             Column4.Name = "Column4";
-            Column4.Width = 150;
             // 
             // Column9
             // 
             Column9.HeaderText = "Address";
             Column9.MinimumWidth = 8;
             Column9.Name = "Column9";
-            Column9.Width = 150;
             // 
             // Column11
             // 
             Column11.HeaderText = "Enroll Date";
             Column11.MinimumWidth = 8;
             Column11.Name = "Column11";
-            Column11.Width = 150;
             // 
             // button4
             // 

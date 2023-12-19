@@ -65,6 +65,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
             dataGridView1.Dock = DockStyle.Fill;
@@ -80,42 +81,36 @@
             Column1.HeaderText = "ClassID";
             Column1.MinimumWidth = 8;
             Column1.Name = "Column1";
-            Column1.Width = 150;
             // 
             // Column2
             // 
             Column2.HeaderText = "Name";
             Column2.MinimumWidth = 8;
             Column2.Name = "Column2";
-            Column2.Width = 150;
             // 
             // Column3
             // 
             Column3.HeaderText = "Number of Chairs";
             Column3.MinimumWidth = 8;
             Column3.Name = "Column3";
-            Column3.Width = 150;
             // 
             // Column4
             // 
             Column4.HeaderText = "Number of Tables";
             Column4.MinimumWidth = 8;
             Column4.Name = "Column4";
-            Column4.Width = 150;
             // 
             // Column5
             // 
             Column5.HeaderText = "Room No";
             Column5.MinimumWidth = 8;
             Column5.Name = "Column5";
-            Column5.Width = 150;
             // 
             // Column6
             // 
             Column6.HeaderText = "Section";
             Column6.MinimumWidth = 8;
             Column6.Name = "Column6";
-            Column6.Width = 150;
             // 
             // button3
             // 

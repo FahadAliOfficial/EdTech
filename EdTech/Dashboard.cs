@@ -27,7 +27,7 @@ namespace EdTech
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            using(Employee_Details res = new EdTech.Employee_Details()) { res.ShowDialog(); }
         }
 
         private void button3_Click(object sender, EventArgs e)
