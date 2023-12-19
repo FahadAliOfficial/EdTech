@@ -19,7 +19,7 @@ namespace EdTech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using(Students res = new EdTech.Students())
+            using (Students res = new EdTech.Students())
             {
                 res.ShowDialog();
             }
@@ -32,11 +32,16 @@ namespace EdTech
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            using (Class_Details res = new EdTech.Class_Details()) { res.ShowDialog(); }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

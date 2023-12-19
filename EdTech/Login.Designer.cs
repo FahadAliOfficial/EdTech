@@ -36,6 +36,7 @@
             textBox1 = new TextBox();
             label5 = new Label();
             button1 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -56,7 +57,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(343, 187);
+            label2.Location = new Point(328, 188);
             label2.Name = "label2";
             label2.Size = new Size(99, 38);
             label2.TabIndex = 1;
@@ -120,7 +121,7 @@
             // 
             button1.Anchor = AnchorStyles.Top;
             button1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(343, 495);
+            button1.Location = new Point(240, 516);
             button1.Name = "button1";
             button1.Size = new Size(311, 60);
             button1.TabIndex = 8;
@@ -128,12 +129,27 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form1
+            // button5
+            // 
+            button5.FlatAppearance.BorderSize = 2;
+            button5.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(701, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(74, 48);
+            button5.TabIndex = 11;
+            button5.Text = "X";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
             ClientSize = new Size(787, 742);
+            Controls.Add(button5);
             Controls.Add(button1);
             Controls.Add(label5);
             Controls.Add(textBox1);
@@ -142,7 +158,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Login";
             Text = "Login";
             ResumeLayout(false);
             PerformLayout();
@@ -158,5 +174,6 @@
         private TextBox textBox1;
         private Label label5;
         private Button button1;
+        private Button button5;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button1 = new Button();
             label1 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -74,27 +73,12 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
-            panel1.Controls.Add(button1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1046, 75);
             panel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(942, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 53);
-            button1.TabIndex = 1;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -455,8 +439,9 @@
             button4.Name = "button4";
             button4.Size = new Size(156, 67);
             button4.TabIndex = 67;
-            button4.Text = "Clear";
+            button4.Text = "Close";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // New_Student_Registration
             // 
@@ -543,7 +528,6 @@
         private TextBox textBox9;
         private TextBox textBox10;
         private Label label19;
-        private Button button1;
         private ComboBox comboBox1;
         private DateTimePicker dateTimePicker1;
         private PictureBox pictureBox1;

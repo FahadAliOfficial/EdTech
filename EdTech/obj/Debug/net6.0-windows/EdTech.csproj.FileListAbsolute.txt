@@ -39,3 +39,6 @@ C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\ref
 C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.pdb
 C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.genruntimeconfig.cache
 C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\ref\EdTech.dll
+C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Add_New_Class.resources
+C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Class_Details.resources
+C:\Users\Mr.Stranger\Documents\GitHub\EdTech\EdTech\obj\Debug\net6.0-windows\EdTech.Update_Class.resources

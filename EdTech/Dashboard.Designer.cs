@@ -46,12 +46,14 @@
             button11 = new Button();
             button12 = new Button();
             button13 = new Button();
+            button14 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(button14);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -283,6 +285,20 @@
             button13.TextAlign = ContentAlignment.BottomLeft;
             button13.UseVisualStyleBackColor = false;
             // 
+            // button14
+            // 
+            button14.FlatAppearance.BorderSize = 2;
+            button14.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.ForeColor = Color.White;
+            button14.Location = new Point(881, 16);
+            button14.Name = "button14";
+            button14.Size = new Size(74, 48);
+            button14.TabIndex = 17;
+            button14.Text = "X";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -332,5 +348,6 @@
         private Button button11;
         private Button button12;
         private Button button13;
+        private Button button14;
     }
 }
