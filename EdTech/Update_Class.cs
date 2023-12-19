@@ -21,5 +21,10 @@ namespace EdTech
         {
             class_id.Text = class_name.Text = class_section.Text = num_chairs.Text = num_rooms.Text = num_students.Text = num_tables.Text = String.Empty;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

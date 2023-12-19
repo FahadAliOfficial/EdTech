@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EdTech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea6e960359d82dbfa2712262dfed861c46b0138f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebc5d4a7558bb3d6b6fd5404a9756767796616dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("EdTech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EdTech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
