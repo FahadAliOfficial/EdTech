@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EdTech
 {
-    internal class Student:Person
+    public class Student:Person
     {
         public string Student_ID { get; set; } = "";
         public string Student_Session { get; set; } = "";

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EdTech
 {
-    internal class Faculity:Person
+    public class Faculity:Person
     {
         public string Role { get; set; } = "";
         public double Salary = 0;
