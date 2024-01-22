@@ -36,20 +36,22 @@
             label7 = new Label();
             label4 = new Label();
             label5 = new Label();
-            class_section = new TextBox();
-            num_tables = new TextBox();
-            num_students = new TextBox();
+            section = new TextBox();
+            numtables = new TextBox();
+            numstudents = new TextBox();
             label1 = new Label();
-            class_name = new TextBox();
-            class_id = new TextBox();
+            name = new TextBox();
+            id = new TextBox();
             label3 = new Label();
             label2 = new Label();
             panel4 = new Panel();
             panel3 = new Panel();
             panel2 = new Panel();
             panel1 = new Panel();
-            num_chairs = new TextBox();
-            num_rooms = new TextBox();
+            numchairs = new TextBox();
+            numrooms = new TextBox();
+            label8 = new Label();
+            stdcap = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,7 +66,7 @@
             button4.Location = new Point(492, 566);
             button4.Name = "button4";
             button4.Size = new Size(156, 67);
-            button4.TabIndex = 104;
+            button4.TabIndex = 11;
             button4.Text = "Close";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
@@ -80,7 +82,7 @@
             button3.Location = new Point(330, 566);
             button3.Name = "button3";
             button3.Size = new Size(156, 67);
-            button3.TabIndex = 103;
+            button3.TabIndex = 10;
             button3.Text = "Clear";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
@@ -96,15 +98,16 @@
             button5.Location = new Point(168, 566);
             button5.Name = "button5";
             button5.Size = new Size(156, 67);
-            button5.TabIndex = 102;
+            button5.TabIndex = 9;
             button5.Text = "Save";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(181, 446);
+            label13.Location = new Point(181, 482);
             label13.Name = "label13";
             label13.Size = new Size(109, 30);
             label13.TabIndex = 83;
@@ -150,29 +153,29 @@
             label5.TabIndex = 79;
             label5.Text = "No Of Students:";
             // 
-            // class_section
+            // section
             // 
-            class_section.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            class_section.Location = new Point(380, 449);
-            class_section.Name = "class_section";
-            class_section.Size = new Size(257, 37);
-            class_section.TabIndex = 78;
+            section.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            section.Location = new Point(380, 485);
+            section.Name = "section";
+            section.Size = new Size(257, 37);
+            section.TabIndex = 8;
             // 
-            // num_tables
+            // numtables
             // 
-            num_tables.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            num_tables.Location = new Point(380, 341);
-            num_tables.Name = "num_tables";
-            num_tables.Size = new Size(257, 37);
-            num_tables.TabIndex = 77;
+            numtables.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            numtables.Location = new Point(380, 341);
+            numtables.Name = "numtables";
+            numtables.Size = new Size(257, 37);
+            numtables.TabIndex = 5;
             // 
-            // num_students
+            // numstudents
             // 
-            num_students.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            num_students.Location = new Point(380, 233);
-            num_students.Name = "num_students";
-            num_students.Size = new Size(257, 37);
-            num_students.TabIndex = 76;
+            numstudents.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            numstudents.Location = new Point(380, 233);
+            numstudents.Name = "numstudents";
+            numstudents.Size = new Size(257, 37);
+            numstudents.TabIndex = 3;
             // 
             // label1
             // 
@@ -185,21 +188,21 @@
             label1.TabIndex = 0;
             label1.Text = "Add Class";
             // 
-            // class_name
+            // name
             // 
-            class_name.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            class_name.Location = new Point(380, 180);
-            class_name.Name = "class_name";
-            class_name.Size = new Size(257, 37);
-            class_name.TabIndex = 75;
+            name.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            name.Location = new Point(380, 180);
+            name.Name = "name";
+            name.Size = new Size(257, 37);
+            name.TabIndex = 2;
             // 
-            // class_id
+            // id
             // 
-            class_id.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            class_id.Location = new Point(380, 126);
-            class_id.Name = "class_id";
-            class_id.Size = new Size(257, 37);
-            class_id.TabIndex = 74;
+            id.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            id.Location = new Point(380, 126);
+            id.Name = "id";
+            id.Size = new Size(257, 37);
+            id.TabIndex = 1;
             // 
             // label3
             // 
@@ -207,9 +210,9 @@
             label3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(181, 180);
             label3.Name = "label3";
-            label3.Size = new Size(94, 30);
+            label3.Size = new Size(96, 30);
             label3.TabIndex = 73;
-            label3.Text = "Name:";
+            label3.Text = "Grade:";
             // 
             // label2
             // 
@@ -258,42 +261,62 @@
             panel1.Size = new Size(757, 75);
             panel1.TabIndex = 68;
             // 
-            // num_chairs
+            // numchairs
             // 
-            num_chairs.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            num_chairs.Location = new Point(380, 290);
-            num_chairs.Name = "num_chairs";
-            num_chairs.Size = new Size(257, 37);
-            num_chairs.TabIndex = 105;
+            numchairs.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            numchairs.Location = new Point(380, 290);
+            numchairs.Name = "numchairs";
+            numchairs.Size = new Size(257, 37);
+            numchairs.TabIndex = 4;
             // 
-            // num_rooms
+            // numrooms
             // 
-            num_rooms.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            num_rooms.Location = new Point(380, 395);
-            num_rooms.Name = "num_rooms";
-            num_rooms.Size = new Size(257, 37);
-            num_rooms.TabIndex = 106;
+            numrooms.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            numrooms.Location = new Point(380, 395);
+            numrooms.Name = "numrooms";
+            numrooms.Size = new Size(257, 37);
+            numrooms.TabIndex = 6;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(181, 443);
+            label8.Name = "label8";
+            label8.Size = new Size(195, 30);
+            label8.TabIndex = 82;
+            label8.Text = "Total Capacity:";
+            // 
+            // stdcap
+            // 
+            stdcap.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            stdcap.Location = new Point(380, 440);
+            stdcap.Name = "stdcap";
+            stdcap.Size = new Size(257, 37);
+            stdcap.TabIndex = 7;
             // 
             // Add_New_Class
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(757, 719);
-            Controls.Add(num_rooms);
-            Controls.Add(num_chairs);
+            Controls.Add(stdcap);
+            Controls.Add(numrooms);
+            Controls.Add(numchairs);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button5);
             Controls.Add(label13);
+            Controls.Add(label8);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(label4);
             Controls.Add(label5);
-            Controls.Add(class_section);
-            Controls.Add(num_tables);
-            Controls.Add(num_students);
-            Controls.Add(class_name);
-            Controls.Add(class_id);
+            Controls.Add(section);
+            Controls.Add(numtables);
+            Controls.Add(numstudents);
+            Controls.Add(name);
+            Controls.Add(id);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(panel4);
@@ -302,6 +325,7 @@
             Controls.Add(panel1);
             Name = "Add_New_Class";
             Text = "Add_New_Class";
+            Load += Add_New_Class_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -319,19 +343,21 @@
         private Label label7;
         private Label label4;
         private Label label5;
-        private TextBox class_section;
-        private TextBox num_tables;
-        private TextBox num_students;
+        private TextBox section;
+        private TextBox numtables;
+        private TextBox numstudents;
         private Label label1;
-        private TextBox class_name;
-        private TextBox class_id;
+        private TextBox name;
+        private TextBox id;
         private Label label3;
         private Label label2;
         private Panel panel4;
         private Panel panel3;
         private Panel panel2;
         private Panel panel1;
-        private TextBox num_chairs;
-        private TextBox num_rooms;
+        private TextBox numchairs;
+        private TextBox numrooms;
+        private Label label8;
+        private TextBox stdcap;
     }
 }

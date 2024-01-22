@@ -8,15 +8,19 @@ namespace EdTech
 {
     public class Faculity:Person
     {
-        public string Role { get; set; } = "";
-        public double Salary = 0;
-        public DateTime Joinging_Date { get; set; } = DateTime.MinValue;
+            public string Role { get; set; } = "";
+            public int Salary { get; set; } = 0;
+            public DateTime? Joining_Date { get; set; } = null;
 
-        public Faculity(string name, string gender, DateTime dob, string disability, int age, string role, double salary):base(name,gender,dob,disability,age) 
+        public Faculity(string name, string gender, 
+            DateTime dob, string disability,
+            int age, string role, int salary, DateTime j)
+            :base(name,gender,dob,disability,age) 
         {
             Role = role;
             Salary = salary;
-            Joinging_Date = DateTime.Now;
+            Joining_Date = j;
         }
+       
     }
 }

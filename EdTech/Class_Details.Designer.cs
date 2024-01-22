@@ -29,13 +29,7 @@
         private void InitializeComponent()
         {
             panel6 = new Panel();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
+            GridViewClasses = new DataGridView();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
@@ -49,68 +43,32 @@
             panel2 = new Panel();
             button6 = new Button();
             label2 = new Label();
-            textBox1 = new TextBox();
+            showall = new Button();
+            name = new TextBox();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)GridViewClasses).BeginInit();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panel6
             // 
-            panel6.Controls.Add(dataGridView1);
+            panel6.Controls.Add(GridViewClasses);
             panel6.Location = new Point(12, 243);
             panel6.Name = "panel6";
             panel6.Size = new Size(1105, 418);
             panel6.TabIndex = 20;
             // 
-            // dataGridView1
+            // GridViewClasses
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(1105, 418);
-            dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ClassID";
-            Column1.MinimumWidth = 8;
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Name";
-            Column2.MinimumWidth = 8;
-            Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Number of Chairs";
-            Column3.MinimumWidth = 8;
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Number of Tables";
-            Column4.MinimumWidth = 8;
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Room No";
-            Column5.MinimumWidth = 8;
-            Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Section";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
+            GridViewClasses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            GridViewClasses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GridViewClasses.Dock = DockStyle.Fill;
+            GridViewClasses.Location = new Point(0, 0);
+            GridViewClasses.Name = "GridViewClasses";
+            GridViewClasses.RowHeadersWidth = 62;
+            GridViewClasses.RowTemplate.Height = 33;
+            GridViewClasses.Size = new Size(1105, 418);
+            GridViewClasses.TabIndex = 0;
             // 
             // button3
             // 
@@ -128,6 +86,7 @@
             button3.Text = "Delete Class";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -275,6 +234,7 @@
             button6.TabIndex = 21;
             button6.Text = "Search";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label2
             // 
@@ -282,24 +242,42 @@
             label2.Font = new Font("Century Gothic", 8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(595, 200);
             label2.Name = "label2";
-            label2.Size = new Size(184, 21);
+            label2.Size = new Size(187, 21);
             label2.TabIndex = 22;
-            label2.Text = "Search Class By Name:";
+            label2.Text = "Search Class By Grade:";
             // 
-            // textBox1
+            // showall
             // 
-            textBox1.Font = new Font("Century Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(785, 196);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(180, 32);
-            textBox1.TabIndex = 23;
+            showall.BackColor = Color.SteelBlue;
+            showall.FlatAppearance.BorderSize = 2;
+            showall.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            showall.FlatStyle = FlatStyle.Flat;
+            showall.Font = new Font("Century Gothic", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            showall.ForeColor = Color.White;
+            showall.Location = new Point(30, 203);
+            showall.Margin = new Padding(4, 3, 4, 3);
+            showall.Name = "showall";
+            showall.Size = new Size(123, 34);
+            showall.TabIndex = 29;
+            showall.Text = "Show All";
+            showall.UseVisualStyleBackColor = false;
+            showall.Click += showall_Click;
+            // 
+            // name
+            // 
+            name.Font = new Font("Century Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            name.Location = new Point(785, 196);
+            name.Name = "name";
+            name.Size = new Size(180, 32);
+            name.TabIndex = 23;
             // 
             // Class_Details
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1129, 670);
-            Controls.Add(textBox1);
+            Controls.Add(showall);
+            Controls.Add(name);
             Controls.Add(label2);
             Controls.Add(button6);
             Controls.Add(panel6);
@@ -315,7 +293,7 @@
             Name = "Class_Details";
             Text = "Class_Details";
             panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)GridViewClasses).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ResumeLayout(false);
@@ -324,7 +302,7 @@
 
         #endregion
         private Panel panel6;
-        private DataGridView dataGridView1;
+        private DataGridView GridViewClasses;
         private Button button3;
         private Button button2;
         private Button button1;
@@ -338,12 +316,7 @@
         private Panel panel2;
         private Button button6;
         private Label label2;
-        private TextBox textBox1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
+        private Button showall;
+        private TextBox name;
     }
 }

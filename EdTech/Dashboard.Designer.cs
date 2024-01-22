@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            username = new Label();
+            label2 = new Label();
+            button14 = new Button();
             label1 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -36,7 +39,6 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
@@ -46,13 +48,14 @@
             button11 = new Button();
             button12 = new Button();
             button13 = new Button();
-            button14 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(username);
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(button14);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
@@ -60,6 +63,42 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(967, 78);
             panel1.TabIndex = 0;
+            // 
+            // username
+            // 
+            username.AutoSize = true;
+            username.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            username.ForeColor = Color.White;
+            username.Location = new Point(85, 24);
+            username.Name = "username";
+            username.Size = new Size(136, 30);
+            username.TabIndex = 18;
+            username.Text = "UserName";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(48, 24);
+            label2.Name = "label2";
+            label2.Size = new Size(42, 30);
+            label2.TabIndex = 17;
+            label2.Text = "Hi,";
+            // 
+            // button14
+            // 
+            button14.FlatAppearance.BorderSize = 2;
+            button14.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.ForeColor = Color.White;
+            button14.Location = new Point(881, 16);
+            button14.Name = "button14";
+            button14.Size = new Size(74, 48);
+            button14.TabIndex = 17;
+            button14.Text = "X";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // label1
             // 
@@ -135,7 +174,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(48, 288);
+            button3.Location = new Point(48, 415);
             button3.Name = "button3";
             button3.Size = new Size(147, 107);
             button3.TabIndex = 6;
@@ -144,30 +183,15 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
-            // button4
-            // 
-            button4.BackColor = Color.SteelBlue;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(201, 288);
-            button4.Name = "button4";
-            button4.Size = new Size(147, 107);
-            button4.TabIndex = 7;
-            button4.Text = "Parent";
-            button4.TextAlign = ContentAlignment.BottomLeft;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
             // button5
             // 
             button5.BackColor = Color.SteelBlue;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(354, 288);
+            button5.Location = new Point(201, 415);
             button5.Name = "button5";
-            button5.Size = new Size(147, 107);
+            button5.Size = new Size(300, 107);
             button5.TabIndex = 8;
             button5.Text = "Fee";
             button5.TextAlign = ContentAlignment.BottomLeft;
@@ -179,7 +203,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(354, 415);
+            button6.Location = new Point(354, 288);
             button6.Name = "button6";
             button6.Size = new Size(147, 107);
             button6.TabIndex = 11;
@@ -193,13 +217,14 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(201, 415);
+            button7.Location = new Point(201, 288);
             button7.Name = "button7";
             button7.Size = new Size(147, 107);
             button7.TabIndex = 10;
             button7.Text = "Teacher";
             button7.TextAlign = ContentAlignment.BottomLeft;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -207,13 +232,14 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(48, 415);
+            button8.Location = new Point(48, 288);
             button8.Name = "button8";
             button8.Size = new Size(147, 107);
             button8.TabIndex = 9;
-            button8.Text = "Exam";
+            button8.Text = "Time Table";
             button8.TextAlign = ContentAlignment.BottomLeft;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -284,20 +310,7 @@
             button13.Text = "Papers";
             button13.TextAlign = ContentAlignment.BottomLeft;
             button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            button14.FlatAppearance.BorderSize = 2;
-            button14.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
-            button14.FlatStyle = FlatStyle.Flat;
-            button14.ForeColor = Color.White;
-            button14.Location = new Point(881, 16);
-            button14.Name = "button14";
-            button14.Size = new Size(74, 48);
-            button14.TabIndex = 17;
-            button14.Text = "X";
-            button14.UseVisualStyleBackColor = true;
-            button14.Click += button14_Click;
+            button13.Click += button13_Click;
             // 
             // Dashboard
             // 
@@ -313,7 +326,6 @@
             Controls.Add(button7);
             Controls.Add(button8);
             Controls.Add(button5);
-            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -321,7 +333,9 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Dashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -338,7 +352,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
         private Button button5;
         private Button button6;
         private Button button7;
@@ -349,5 +362,7 @@
         private Button button12;
         private Button button13;
         private Button button14;
+        private Label username;
+        private Label label2;
     }
 }
